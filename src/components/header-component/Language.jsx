@@ -1,13 +1,13 @@
 import { useContext } from "react";
-import { LanguageSwitch } from "../../contexts/LanguageSwitch"; // Correct path
+import { LanguageSwitch } from "../../contexts/LanguageSwitch";
 
 export default function Language() {
-    const { language, switchLangs } = useContext(LanguageSwitch); // Use the context here
+    const { language, switchLangs } = useContext(LanguageSwitch);
 
     return (
         <div className="languages">
             <div 
-                onClick={() => switchLangs("ru")} // Corrected the function name to match the provider
+                onClick={() => switchLangs("ru")}
                 className={`ru ${language === "ru" ? "lang-active" : ""}`}>
                 RU
             </div>
