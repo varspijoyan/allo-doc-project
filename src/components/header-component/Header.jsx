@@ -1,7 +1,7 @@
 import HeaderLogoComponent from "./header-logo-component/HeaderLogoComponent";
 import HeaderNavBar from "./header-navbar-component/HeaderNavBar";
 import Language from "./Language";
-
+import "../../styles/Header.css"
 export default function Header() {
     return (
         <header>
@@ -9,5 +9,5 @@ export default function Header() {
             <HeaderNavBar />
             <Language />
         </header>
-    )
+    );
 }

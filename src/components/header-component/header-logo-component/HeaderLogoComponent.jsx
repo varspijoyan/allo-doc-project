@@ -1,5 +1,5 @@
 import logo from "../../../images/logo.svg";
 
 export default function HeaderLogoComponent() {
-    return <img src={logo} alt="Logo image" />
+    return <a href="#"><img className="logo" src={logo} alt="Logo image" /></a>
 }

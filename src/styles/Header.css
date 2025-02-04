@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgb(193, 193, 193);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.lang-active {
+    background-color: #56CCF2;
+    width: 32px;
+    height: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear 0.4s;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #A0A0A0;
+    font-weight: 600;
+    transition: 0.4s linear;
+}
+
+.notifications {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.notifications .amount {
+    position: absolute;
+    left: -5px;
+    top: -7px;
+    background-color: orange;
+    width: 18.28px;
+    height: 18.28px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages {
+    position: absolute;
+    top: 0;
+    display: flex;
+    gap: 5px;
+    right: 220px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.authorization {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #56CCF2;
+}
