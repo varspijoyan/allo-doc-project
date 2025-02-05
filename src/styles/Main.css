@@ -1,0 +1,40 @@
+main {
+    padding: 100px;
+}
+
+.main-section-text-container {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-section-text-container .heading {
+    margin-bottom: -10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 15px 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .btn-1 {
+    border: 2px solid #56CCF2;
+    background-color: white;
+    color: #56CCF2;
+
+}
+
+.buttons .btn-2 {
+    background-color: #56CCF2;
+    color: white;
+}
