@@ -62,6 +62,19 @@
     "help": "help",
     "online": "online",
     "Video_connection": "Video connection",
-    "Chat": "Chat"
+    "Chat": "Chat",
+    "Сardiologist": "Cardiologist",
+    "Therapist": "Therapist",
+    "Psychiatrist": "Psychiatrist",
+    "Rheumatologist": "Rheumatologist",
+    "X_ray_technician": "X-ray technician",
+    "Hospital_ward_orderly": "Hospital ward orderly",
+    "Surgical_Department_Nurse_": "Surgical Department Nurse",
+    "Consultation_Department_Nurse": "Consultation Department Nurse",
+    "Hospital_ward_therapist": "Hospital ward therapist",
+    "Functional_diagnostics_doctor": "Functional diagnostics doctor",
+    "Surgical_Department_Nurse": "Surgical Department Nurse",
+    "Procedure_room_nurse": "Procedure room nurseа",
+    "Consultation_room_nurse": "Consultation room nurse"
 }
 

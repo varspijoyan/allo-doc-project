@@ -62,6 +62,18 @@
     "help": "помощь",
     "online": "онлайн",
     "Video_connection": "Видео связь",
-    "Chat": "Чат"
+    "Chat": "Чат",
+    "Сardiologist": "Кардиолог",
+    "Therapist": "Терапевт",
+    "Psychiatrist": "Психиатор",
+    "Rheumatologist": "Ревмотолог",
+    "X_ray_technician": "Рентгенолаборант",
+    "Hospital_ward_orderly": "Санитарка госпитального отделения",
+    "Surgical_Department_Nurse_": "Санитарка хирургического отделения",
+    "Consultation_Department_Nurse": "Санитарка консультативного отделения",
+    "Hospital_ward_therapist": "Терапевт госпитального отделения",
+    "Functional_diagnostics_doctor": "Врач функциональной диагностики",
+    "Surgical_Department_Nurse": "Медсестра хирургического отделения",
+    "Procedure_room_nurse": "Медсестра процедурного кабинета",
+    "Consultation_room_nurse": "Медсестра консультативного кабинета"
 }
-
