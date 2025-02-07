@@ -110,7 +110,7 @@
         "connectionType": "Chat"
     },
     {
-        "firsName": "Ольга",
+        "firstName": "Ольга",
         "lastName": "Никитина",
         "profession": "Pediatrician",
         "experience": "Experience",
@@ -128,7 +128,7 @@
         "connectionType": "Chat"
     },
     {
-        "firsName": "Ольга",
+        "firstName": "Ольга",
         "lastName": "Никитина",
         "profession": "Otorhinolaryngologist_(_ENT_)_,_Therapist",
         "experience": "Experience",
@@ -146,7 +146,7 @@
         "connectionType": "Video_connection"
     },
     {
-        "firsName": "Ольга",
+        "firstName": "Ольга",
         "lastName": "Никитина",
         "profession": "Pediatrician",
         "experience": "Experience",
