@@ -38,7 +38,7 @@ export default function AppointmentList() {
                             clockImage = {clockImg}
                             time = {`${data.time.hours}:${data.time.minutes}:${data.time.seconds}`}
                             chatImage = {data.connectionType === "Video_connection" ? videoCameraImg : chatImg}
-                            connectionType = {data.connectionType}
+                            connectionType = {translate(data.connectionType, language)}
                             status = {translate("Planned", language)}
                             docImage = {docImg}
                             fullName = {`${data.firstName} ${data.lastName}`}
@@ -54,7 +54,7 @@ export default function AppointmentList() {
                             clockImage = {clockImg}
                             time = {`${data.time.hours}:${data.time.minutes}:${data.time.seconds}`}
                             chatImage = {data.connectionType === "Video_connection" ? videoCameraImg : chatImg}
-                            connectionType = {data.connectionType}
+                            connectionType = {translate(data.connectionType, language)}
                             status = {translate("It_took_place", language)}
                             docImage = {docImg}
                             fullName = {`${data.firstName} ${data.lastName}`}
@@ -70,7 +70,7 @@ export default function AppointmentList() {
                         clockImage = {clockImg}
                         time = {`${data.time.hours}:${data.time.minutes}:${data.time.seconds}`}
                         chatImage = {data.connectionType === "Video_connection" ? videoCameraImg : chatImg}
-                        connectionType = {data.connectionType}
+                        connectionType = {translate(data.connectionType, language)}
                         status = {translate("Cancelled", language)}
                         docImage = {docImg}
                         fullName = {`${data.firstName} ${data.lastName}`}
