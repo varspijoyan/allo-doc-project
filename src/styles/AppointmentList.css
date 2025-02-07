@@ -1,0 +1,164 @@
+.appointment-list {
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.appointment-status {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: -70px;
+}
+
+.appointment-list .title {
+    background-color: rgb(86, 194, 248);
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.appointment-list .ru-title {
+    width: 143px;
+    height: 30px;
+}
+
+.appointment-list .en-title {
+    width: 190px;
+    height: 30px;
+}
+
+.appointment-status ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.appointment-status ul li {
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.li-active {
+    background-color: #ebebeb;
+    width: 120px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointment {
+    width: 110%;
+    background-color: white;
+    height: 210px;
+    box-shadow: 0px 0px 10px rgb(204, 203, 203);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.appointment-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    width: 100%;
+}
+
+.appointment-date .date-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 15px;
+}
+
+.appointment-date .date-info .info {
+    display: flex;
+    gap: 10px;
+}
+
+.status {
+    /* background-color: #FFAB43; */
+    width: 145px;
+    height: 27px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.doc-info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.appointment-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appointment-buttons button {
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.appointment-buttons .appointment-btn-1 {
+    background-color: #56CCF2;
+    color: white;
+}
+
+.doc-info .full-name {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.doc-info .profession {
+    color: #AAAAAA;
+    font-weight: 500;
+}
+
+.doc-info .experience {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.status.it-took-place {
+    background-color: #1BD741;
+    color: white;
+}
+
+.status.planned{
+    background-color: #FFC107;
+    color: black;
+}
+
+.status.cancelled {
+    background-color: #DC3545;
+    color: white;
+}
