@@ -219,6 +219,9 @@
             "planned": false,
             "It_took_place": true,
             "cancelled": false
-        }
+        },
+        "date": "09 Jan 2025",
+        "time": "14:15",
+        "connectedType": "Video_connection"
     }
 ]
