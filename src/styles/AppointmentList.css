@@ -161,3 +161,11 @@
     background-color: #DC3545;
     color: white;
 }
+
+.appointment-btn-2.it-took-place-bg-color {
+    background-color:#BBEFE0;
+}
+
+.appointment-btn-2.cancelled-bg-color {
+    background-color: #ed737f;
+}

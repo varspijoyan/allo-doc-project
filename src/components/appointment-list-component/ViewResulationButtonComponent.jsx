@@ -4,10 +4,22 @@ import { translate } from "../../utils/translate";
 
 export default function ViewResulationButtonComponent({appointmentDataStatus}) {
     const [isDisabled, setIsDisabled] = useState(true);
+    const [buttonStyle, setButtonStyle] = useState("");
     useEffect(() => {
-        setIsDisabled(prev => !prev);
-        console.log("Effect hook");
-    }, [appointmentDataStatus]); // based on appointmentStatus value, disbled value should be changed
+        if(appointmentDataStatus.planned) {
+            setIsDisabled(true);
+        } else {
+            setIsDisabled(false);
+        }
+    },[appointmentDataStatus]) // based on appointmentStatus value, disbled value should be changed
+
+    useEffect(() => {
+        if(appointmentDataStatus.It_took_place) {
+            setButtonStyle("it-took-place-bg-color");
+        } else if(appointmentDataStatus.cancelled) {
+            setButtonStyle("cancelled-bg-color");
+        }
+    }, [appointmentDataStatus])
     const {language} = useContext(LanguageSwitch);
-    return <button disabled={isDisabled} className="appointment-btn-2">{translate("View", language)} {translate("the_resulation", language)}</button>    
+    return <button disabled={isDisabled} className={`appointment-btn-2 ${buttonStyle}`}>{translate("View", language)} {translate("the_resulation", language)}</button>    
 }
