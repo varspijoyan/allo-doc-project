@@ -1,5 +1,5 @@
 import "../../styles/AppointmentList.css";
-import { useContext, useState, useMemo, useEffect} from "react";
+import { useContext, useMemo } from "react";
 import {LanguageSwitch} from "../../contexts/LanguageSwitch";
 import {translate} from "../../utils/translate";
 import AddedAppointments from "./AddedAppointments";
@@ -10,37 +10,30 @@ import { useParams, Link} from "react-router-dom";
 export default function AppointmentList() {
     const {language} = useContext(LanguageSwitch);
     const {status} = useParams();
-    const [activeStatusLink, setActiveStatusLink] = useState("upcoming" || status);
     const filteredAppointments = useMemo(() => {
         return appointmentInfo.filter((data) => {
-            if(activeStatusLink === "upcoming")
+            if(status === "upcoming")
                 return data.status.planned;
-            if(activeStatusLink === "past")
+            if(status === "past")
                 return data.status.It_took_place;
-            if(activeStatusLink === "cancelled")
+            if(status === "cancelled")
                 return data.status.cancelled;
             return false;
         });
-    }, [activeStatusLink]);
+    }, [status]);
 
     return (
         <section className="appointment-list">
             <p className={`title ${language === "ru" ? "ru-title" : "en-title"}`}>{translate("My_appointments", language)}</p>
             <div className="appointment-status">
                 <ul>
-                    <li 
-                        className={`status-upcoming ${activeStatusLink === "upcoming" ? "li-active" : ""}`}
-                        onClick={() => setActiveStatusLink("upcoming")}>
+                    <li className={`status-upcoming ${status === "upcoming" ? "li-active" : ""}`}>
                             <Link className="router-link" to="upcoming">{translate("Upcoming", language)}</Link>
                     </li>
-                    <li 
-                        className={`status-past ${activeStatusLink === "past" ? "li-active" : ""}`}
-                        onClick={() => setActiveStatusLink("past")}>
+                    <li className={`status-past ${status === "past" ? "li-active" : ""}`}>
                             <Link className="router-link" to="past">{translate("Past", language)}</Link>
                     </li>
-                    <li 
-                        className={`status-cancelled ${activeStatusLink === "cancelled" ? "li-active" : ""}`}
-                        onClick={() => setActiveStatusLink("cancelled")}>
+                    <li className={`status-cancelled ${status === "cancelled" ? "li-active" : ""}`}>
                             <Link className="router-link" to="cancelled">{translate("Cancelled", language)}</Link>
                     </li>
                 </ul>
