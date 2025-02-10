@@ -1,38 +1,48 @@
 import "../../styles/AppointmentList.css";
-import { useContext, useState, useMemo } from "react";
+import { useContext, useState, useMemo, useEffect} from "react";
 import {LanguageSwitch} from "../../contexts/LanguageSwitch";
 import {translate} from "../../utils/translate";
 import AddedAppointments from "./AddedAppointments";
 import appointmentInfo from "../../locals/appointmentInfo.json";
+import { useParams, Link} from "react-router-dom";
+
 
 export default function AppointmentList() {
     const {language} = useContext(LanguageSwitch);
-    const [activeStatusLink, setActiveStatusLink] = useState("status-upcoming");
+    const {status} = useParams();
+    const [activeStatusLink, setActiveStatusLink] = useState("upcoming" || status);
     const filteredAppointments = useMemo(() => {
         return appointmentInfo.filter((data) => {
-            if(activeStatusLink === "status-upcoming")
+            if(activeStatusLink === "upcoming")
                 return data.status.planned;
-            if(activeStatusLink === "status-past")
+            if(activeStatusLink === "past")
                 return data.status.It_took_place;
-            if(activeStatusLink === "status-cancelled")
+            if(activeStatusLink === "cancelled")
                 return data.status.cancelled;
             return false;
         });
-    }, [activeStatusLink, appointmentInfo]);
+    }, [activeStatusLink]);
+
     return (
         <section className="appointment-list">
             <p className={`title ${language === "ru" ? "ru-title" : "en-title"}`}>{translate("My_appointments", language)}</p>
             <div className="appointment-status">
                 <ul>
                     <li 
-                        className={`status-upcoming ${activeStatusLink === "status-upcoming" ? "li-active" : ""}`}
-                        onClick={() => setActiveStatusLink("status-upcoming")}>{translate("Upcoming", language)}</li>
+                        className={`status-upcoming ${activeStatusLink === "upcoming" ? "li-active" : ""}`}
+                        onClick={() => setActiveStatusLink("upcoming")}>
+                            <Link className="router-link" to="upcoming">{translate("Upcoming", language)}</Link>
+                    </li>
                     <li 
-                        className={`status-past ${activeStatusLink === "status-past" ? "li-active" : ""}`}
-                        onClick={() => setActiveStatusLink("status-past")}>{translate("Past", language)}</li>
+                        className={`status-past ${activeStatusLink === "past" ? "li-active" : ""}`}
+                        onClick={() => setActiveStatusLink("past")}>
+                            <Link className="router-link" to="past">{translate("Past", language)}</Link>
+                    </li>
                     <li 
-                        className={`status-cancelled ${activeStatusLink === "status-cancelled" ? "li-active" : ""}`}
-                        onClick={() => setActiveStatusLink("status-cancelled")}>{translate("Cancelled", language)}</li>
+                        className={`status-cancelled ${activeStatusLink === "cancelled" ? "li-active" : ""}`}
+                        onClick={() => setActiveStatusLink("cancelled")}>
+                            <Link className="router-link" to="cancelled">{translate("Cancelled", language)}</Link>
+                    </li>
                 </ul>
             </div>
             {filteredAppointments.map((data) => {
