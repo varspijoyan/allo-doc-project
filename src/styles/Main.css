@@ -123,3 +123,8 @@ main {
     left: 150px;
     width: 178px;
 }
+
+.highlight-blue {
+    font-weight: bold;
+    color: #56CCF2;
+}
