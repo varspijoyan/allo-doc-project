@@ -90,7 +90,6 @@
 }
 
 .status {
-    /* background-color: #FFAB43; */
     width: 145px;
     height: 27px;   
     display: flex;
@@ -168,4 +167,10 @@
 
 .appointment-btn-2.cancelled-bg-color {
     background-color: #ed737f;
+}
+
+.router-link {
+    text-decoration: none;
+    color: #A0A0A0;
+    font-weight: 600;
 }
