@@ -53,7 +53,7 @@ export default function AddedAppointments({appointmentData}) {
                     </div>
                 </div>
                 <div className="appointment-buttons">
-                    <ViewAppointmentButtonComponent />
+                    <ViewAppointmentButtonComponent doctorId={appointmentData.id} />
                     <ViewResulationButtonComponent appointmentDataStatus={appointmentData.status}/>
                 </div>
             </div>
