@@ -1,0 +1,109 @@
+footer {
+    background-color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px;
+    position: absolute;
+    bottom: -2650px;
+    left: 0;
+    width: 91.65%;
+    color: white;
+}
+
+
+.footer-text-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links .icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.application-download-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.application-download-links .footer-link {
+    width: 145px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.application-download-links .footer-link .logo-link {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.application-download-links .footer-link .logo-link > div {
+    color: #000000;
+    font-size: 12px;
+}
+
+.application-download-links .footer-link .logo-link .link-text {
+    font-weight: 600;
+}
+
+.application-download-links .footer-link .logo-link .font-weight-and-size {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-nav-links-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.footer-nav-links-container ul li {
+    list-style-type: none;
+}
+
+.footer-nav-links-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-start;
+}
+
+.info-footer .information {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

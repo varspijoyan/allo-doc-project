@@ -4,6 +4,7 @@ import LanguageSwitchProvider from "../src/contexts/LanguageSwitch";
 import MainPage from "./pages/MainPage";
 import { Navigate, Route, Routes } from "react-router-dom";
 import AppointmentList from "./components/appointment-list-component/AppointmentList";
+import Footer from "./components/footer-component/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path=":status" element={<AppointmentList />}/>
         </Route>
       </Routes>
+      <Footer />
     </LanguageSwitchProvider>
   );
 }
