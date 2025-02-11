@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "firstName": "Ольга",
         "lastName": "Никитина",
         "profession": "Pediatrician",
@@ -15,7 +15,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 2,
+        "id": "2",
         "firstName": "Анна",
         "lastName": "Смирнова",
         "profession": "Otorhinolaryngologist_(_ENT_)_,_Therapist",
@@ -30,7 +30,7 @@
         "connectedType": "Chat"
     },
     {
-        "id": 3,
+        "id": "3",
         "firstName": "Екатерина",
         "lastName": "Волкова",
         "profession": "Сardiologist",
@@ -45,7 +45,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 4,
+        "id": "4",
         "firstName": "Мария",
         "lastName": "Сергеева",
         "profession": "Therapist",
@@ -60,7 +60,7 @@
         "connectedType": "Chat"
     },
     {
-        "id": 5,
+        "id": "5",
         "firstName": "Елена",
         "lastName": "Павлова",
         "profession": "Psychiatrist",
@@ -75,7 +75,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 6,
+        "id": "6",
         "firstName": "Виктория",
         "lastName": "Соловьёва",
         "profession": "Rheumatologist",
@@ -90,7 +90,7 @@
         "connectedType": "Chat"
     },
     {
-        "id": 7,
+        "id": "7",
         "firstName": "Дарья",
         "lastName": "Иванова",
         "profession": "X_ray_technician",
@@ -105,7 +105,7 @@
         "connectedType": "Chat"
     },
     {
-        "id": 8,
+        "id": "8",
         "firstName": "Ксения",
         "lastName": "Орлова",
         "profession": "Hospital_ward_orderly",
@@ -120,7 +120,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 9,
+        "id": "9",
         "firstName": "Юлия",
         "lastName": "Васильева",
         "profession": "Surgical_Department_Nurse_",
@@ -135,7 +135,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 10,
+        "id": "10",
         "firstName": "Александра",
         "lastName": "Тихонова",
         "profession": "Consultation_Department_Nurse",
@@ -150,7 +150,7 @@
         "connectedType": "Chat"
     },
     {
-        "id": 11,
+        "id": "11",
         "firstName": "Вероника",
         "lastName": "Захарова",
         "profession": "Hospital_ward_therapist",
@@ -165,7 +165,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 12,
+        "id": "12",
         "firstName": "Полина",
         "lastName": "Сидорова",
         "profession": "Functional_diagnostics_doctor",
@@ -180,7 +180,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 13,
+        "id": "13",
         "firstName": "Арина",
         "lastName": "Мельникова",
         "profession": "Surgical_Department_Nurse",
@@ -195,7 +195,7 @@
         "connectedType": "Chat"
     },
     {
-        "id": 14,
+        "id": "14",
         "firstName": "Людмила",
         "lastName": "Королёва",
         "profession": "Procedure_room_nurse",
@@ -210,7 +210,7 @@
         "connectedType": "Video_connection"
     },
     {
-        "id": 15,
+        "id": "15",
         "firstName": "Мирослава",
         "lastName": "Черкасова",
         "profession": "Consultation_room_nurse",
