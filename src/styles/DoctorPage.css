@@ -43,3 +43,22 @@
     color: #56CCF2;
     font-weight: bold;
 }
+
+.information-container {
+    margin-left: 30px;
+    padding: 80px;
+    margin-bottom: 200px;
+}
+
+.all-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+}
+
+.all-informations .inf .inf-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

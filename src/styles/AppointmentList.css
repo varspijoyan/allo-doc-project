@@ -68,6 +68,11 @@
     margin-bottom: 30px;
 }
 
+
+.appointment:last-child {
+    margin-bottom: 150px;
+}
+
 .appointment-date {
     display: flex;
     align-items: center;
