@@ -7,7 +7,7 @@ export default function ViewAppointmentButtonComponent({ doctorId }) {
     const { language } = useContext(LanguageSwitch);
     return (
         <button className="appointment-btn-1">
-            <Link to={`/doctor-profile/${doctorId}`}>
+            <Link className="router-btn-link" to={`/doctor-profile/${doctorId}`}>
                 {translate("View", language)} {translate("the_appointment", language)}
             </Link>
         </button>
