@@ -173,3 +173,8 @@
     color: #A0A0A0;
     font-weight: 600;
 }
+
+.router-btn-link {
+    text-decoration: none;
+    color: white;
+}
