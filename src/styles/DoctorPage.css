@@ -8,7 +8,6 @@
     gap: 90px;
     color: white;
     padding-bottom: 30px;
-
 }
 
 .navigations {
@@ -17,7 +16,6 @@
     margin-top: 20px;
     padding-left: 100px;
     margin-bottom: -70px;
-
 }
 
 .navigations .navigation {
@@ -39,4 +37,9 @@
 .duration-and-price {
     position: absolute;
     right: 140px;
+}
+
+.information-container .inf .highlight-blue-color {
+    color: #56CCF2;
+    font-weight: bold;
 }
