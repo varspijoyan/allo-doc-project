@@ -75,5 +75,13 @@
     "Functional_diagnostics_doctor": "Врач функциональной диагностики",
     "Surgical_Department_Nurse": "Медсестра хирургического отделения",
     "Procedure_room_nurse": "Медсестра процедурного кабинета",
-    "Consultation_room_nurse": "Медсестра консультативного кабинета"
+    "Consultation_room_nurse": "Медсестра консультативного кабинета",
+    "Doctors": "Врачи",
+    "Doctor_Profile": "Профиль Врача",
+    "consultation": "консультация",
+    "minutes": "минут",
+    "Next_entry": "Ближайшая запись",
+    "Education": "Образование",
+    "Specializes_in_treatment": "Специализируется на лечении",
+    "Additionally": "Дополнительно"
 }
