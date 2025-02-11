@@ -3,6 +3,7 @@ import ProfileComponent from "../components/doctor-page-components/ProfileCompon
 import { useEffect, useState } from "react";
 import docInfo from "../locals/appointmentInfo.json";
 import "../styles/DoctorPage.css";
+import InformationContainerComponent from "../components/doctor-page-components/InformationContainerComponent.jsx";
 
 export default function DoctorProfilePage() {
     const [doctor, setDoctor] = useState({});
@@ -20,5 +21,10 @@ export default function DoctorProfilePage() {
         return <h1>Doctor not found</h1>;
     }
 
-    return <ProfileComponent docInfo={doctor}/>;
+    return (
+        <>
+            <ProfileComponent docInfo={doctor}/>
+            <InformationContainerComponent docInfo={doctor} />
+        </>
+    )
 }
