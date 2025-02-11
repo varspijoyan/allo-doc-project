@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import ProfileComponent from "../components/doctor-page-components/ProfileComponent.jsx";
 import { useEffect, useState } from "react";
 import docInfo from "../locals/appointmentInfo.json";
+import "../styles/DoctorPage.css";
 
 export default function DoctorProfilePage() {
     const [doctor, setDoctor] = useState({});
@@ -19,5 +20,5 @@ export default function DoctorProfilePage() {
         return <h1>Doctor not found</h1>;
     }
 
-    return <ProfileComponent />;
+    return <ProfileComponent docInfo={doctor}/>;
 }
