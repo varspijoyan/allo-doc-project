@@ -10,15 +10,15 @@ export default function ProfileComponent({ docInfo }) {
     <section className="doc-profile-container">
         <div className="navigations">
             <div className="navigation">
-            <p>{translate("Doctors", language)}</p>
-            <img src={vector} alt="vector image" />
+                <p>{translate("Doctors", language)}</p>
+                <img src={vector} alt="vector image" />
             </div>
             <div className="navigation">
-            <p>{translate("Pediatrician", language)}</p>
-            <img src={vector} alt="vector image" />
+                <p>{translate("Pediatrician", language)}</p>
+                <img src={vector} alt="vector image" />
             </div>
-            <div className="navigation">
-            <p>{translate("Doctor_Profile", language)}</p>
+                <div className="navigation">
+                <p>{translate("Doctor_Profile", language)}</p>
             </div>
         </div>
         <div className="doc-profile">
