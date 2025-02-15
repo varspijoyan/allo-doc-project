@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LanguageSwitch } from "../../contexts/LanguageSwitch";
 import { translate } from "../../utils/translate";
 import vector from "../../images/Vector2.svg";
@@ -6,6 +6,11 @@ import doctorImage from "../../images/doc-img.svg";
 
 export default function ProfileComponent({ docInfo }) {
   const { language } = useContext(LanguageSwitch);
+  useEffect(() => {
+    // if we remove this the by navigating to doctor page, the page will be showed from the bottom 
+    window.scrollTo(0, 0); // when we will navigate to the doctor page, by adding scrollTo(0, 0) this should show the page from the top 
+  }, []);
+
   return (
     <section className="doc-profile-container">
         <div className="navigations">
