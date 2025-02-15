@@ -39,6 +39,14 @@
     right: 140px;
 }
 
+.duration-and-price .price {
+    font-weight: bold;
+}
+
+.duration-and-price .duration {
+    font-weight: 600;
+}
+
 .information-container .inf .highlight-blue-color {
     color: #56CCF2;
     font-weight: bold;
