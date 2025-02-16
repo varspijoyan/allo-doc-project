@@ -10,7 +10,7 @@ export default function Authorization() {
         const handleClickOnBody = (event) => {
             // ref.current - we check if the current (i.e <div className="authorization">) is exist and has no errors
             // !ref.current.contains(event.target) - if we clicked outside the component (i.e on body)
-            // if both are true then we set the status to false (the previest status)
+            // if both are true then we set the status to false (the previous status)
             // which by clicking outside the component (on body) the <AuthorizationProfile /> will be closed
             // event.target - body
             if(ref.current && !ref.current.contains(event.target)) {
