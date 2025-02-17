@@ -14,7 +14,7 @@ export default function FooterTextContainer() {
         <p className="text-part-1">
           {translate("Online", language)} -{" "}
           {translate("consultations", language)}{" "}
-          {translate("specialists", language)} {translate("doctors", language)},{" "}
+          {translate("of_specialists_doctors", language)},{" "}
           {translate("what_this_service_offers", language)}.
         </p>
         <p className="text-part-2">
