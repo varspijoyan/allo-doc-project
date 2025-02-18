@@ -1,14 +1,15 @@
 import "../../styles/AppointmentList.css";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import AddedAppointments from "./AddedAppointments";
 import appointmentInfo from "../../locals/appointmentInfo.json";
 import { useParams, Link} from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+import { changeLanguage } from "../header-component/Language";
 
 export default function AppointmentList() {
     const { t } = useTranslation(); 
     const {status} = useParams();
+    const [language, setLanguage] = useState('ru');
     const filteredAppointments = useMemo(() => {
         return appointmentInfo.filter((data) => {
             if(status === "upcoming")

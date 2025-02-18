@@ -7,7 +7,6 @@ export default function Language() {
         i18n.changeLanguage(lng); //  changing language
         setLanguage(lng); // updating state
     }, []);
-
     return (
         <div className="languages">
             <div 
