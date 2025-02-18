@@ -1,11 +1,11 @@
 import MakeAnAppointmentButtonComponent from "../main-section-button-component/MakeAnAppointmentButtonComponent";
 import HowItWorksButtonComponent from "../main-section-button-component/HowItWorksButtonComponent";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import i18n from "../../../i18n";
 
 export default function MainTextContainerComponent() {
     const { t } = useTranslation();
-    const [language, setLanguage] = useState('ru');
+    const language = i18n.language;
     return (
         <div className="main-section-text-container">
             <h1 className="heading">{t("mainSection.heading")} 24/7</h1>

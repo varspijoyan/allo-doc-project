@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next"
+import i18n from "../../../i18n";
 
 export default function AppointmentTextContainerComponent() {
     const { t } = useTranslation();
-    const [language, setLanguage] = useState('ru');
+    const language = i18n.language;
     return (
         <div className="appointment-text-container">
             <h1 className="appointment-section-heading">{t("makeAnAppointmentSection.heading")}</h1>
