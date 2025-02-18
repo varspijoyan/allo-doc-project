@@ -1,7 +1,5 @@
-import { useContext } from "react";
+
 import logoutImg from "../../../../../images/logout.svg";
-import { LanguageSwitch } from "../../../../../contexts/LanguageSwitch";
-import { translate } from "../../../../../utils/translate";
 
 export default function Logout() {
     const {language} = useContext(LanguageSwitch);

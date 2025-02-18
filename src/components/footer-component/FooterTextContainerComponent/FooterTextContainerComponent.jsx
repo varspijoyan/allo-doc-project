@@ -1,10 +1,7 @@
-import { useContext } from "react";
+
 import logo_footer from "../../../images/logo-footer.svg";
 import apple_logo from "../../../images/Logo-apple.svg";
 import play_market_logo from "../../../images/Logo-playmarket.svg";
-import { LanguageSwitch } from "../../../contexts/LanguageSwitch";
-import { translate } from "../../../utils/translate";
-
 export default function FooterTextContainer() {
   const { language } = useContext(LanguageSwitch);
   return (

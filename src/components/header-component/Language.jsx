@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { LanguageSwitch } from "../../contexts/LanguageSwitch";
 
 export default function Language() {
     const { language, switchLangs } = useContext(LanguageSwitch);

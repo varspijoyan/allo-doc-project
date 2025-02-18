@@ -5,9 +5,7 @@ import messageImg from "../../images/message.svg";
 import locationImg from "../../images/place.svg";
 import clockImg from "../../images/clock.svg";
 import phoneImg from "../../images/phone-call.svg";
-import { useContext } from "react";
-import { LanguageSwitch } from "../../contexts/LanguageSwitch";
-import { translate } from "../../utils/translate";
+
 
 export default function Footer() {
     const {language} = useContext(LanguageSwitch);

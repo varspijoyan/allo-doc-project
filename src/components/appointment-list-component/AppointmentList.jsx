@@ -1,7 +1,5 @@
 import "../../styles/AppointmentList.css";
-import { useContext, useMemo } from "react";
-import {LanguageSwitch} from "../../contexts/LanguageSwitch";
-import {translate} from "../../utils/translate";
+import { useMemo } from "react";
 import AddedAppointments from "./AddedAppointments";
 import appointmentInfo from "../../locals/appointmentInfo.json";
 import { useParams, Link} from "react-router-dom";

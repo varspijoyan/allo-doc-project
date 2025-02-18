@@ -1,7 +1,3 @@
-import { useContext } from "react"
-import { LanguageSwitch } from "../../../contexts/LanguageSwitch"
-import { translate } from "../../../utils/translate";
-
 export default function FooterNavLinks() {
     const {language} = useContext(LanguageSwitch);
     return (

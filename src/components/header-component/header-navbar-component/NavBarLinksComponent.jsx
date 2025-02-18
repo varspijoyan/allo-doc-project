@@ -1,8 +1,6 @@
-import { useContext } from "react"
-import { LanguageSwitch } from "../../../contexts/LanguageSwitch"
-import {translate} from "../../../utils/translate"
+
 export default function NavBarLinksComponent() {
-    const {language} = useContext(LanguageSwitch);
+   
     return (
         <ul>
             <li><a href="#">{translate("How_to_use_?", language)}</a></li>

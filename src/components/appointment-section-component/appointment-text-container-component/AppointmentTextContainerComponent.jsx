@@ -1,6 +1,4 @@
-import { useContext } from "react"
-import {LanguageSwitch} from "../../../contexts/LanguageSwitch";
-import {translate} from "../../../utils/translate";
+
 export default function AppointmentTextContainerComponent() {
     const {language} = useContext(LanguageSwitch);
     return (

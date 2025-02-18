@@ -1,6 +1,5 @@
-import { useContext, useState, useEffect } from "react"
-import { LanguageSwitch } from "../../contexts/LanguageSwitch"
-import { translate } from "../../utils/translate";
+import { useState, useEffect } from "react"
+
 
 export default function ViewResulationButtonComponent({appointmentDataStatus}) {
     const [isDisabled, setIsDisabled] = useState(true);

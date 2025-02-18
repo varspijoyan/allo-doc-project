@@ -1,10 +1,7 @@
-import { useContext } from "react"
-import { LanguageSwitch } from "../../contexts/LanguageSwitch"
 import calendar from "../../images/appointment 1.svg";
 import education from "../../images/mortarboard 1.svg";
 import emergencyLogoImg from "../../images/Group 541.svg";
 import moreInfoImg from "../../images/Group 542.svg";
-import { translate } from "../../utils/translate";
 
 export default function InformationContainerComponent({docInfo}) {
     const {language} = useContext(LanguageSwitch);

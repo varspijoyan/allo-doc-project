@@ -1,7 +1,5 @@
-import { useContext } from "react";
+
 import creditCardImg from "../../../../../images/credit-card.svg";
-import { translate } from "../../../../../utils/translate";
-import { LanguageSwitch } from "../../../../../contexts/LanguageSwitch";
 
 export default function CreditCard() {
     const {language} = useContext(LanguageSwitch);

@@ -5,9 +5,6 @@ import clockImg from "../../images/clock.svg";
 import chatImg from "../../images/conversation.svg";
 import videoCameraImg from "../../images/video-camera.svg";
 import docImg from "../../images/doc-img.svg";
-import { translate } from "../../utils/translate";
-import { useContext } from "react";
-import { LanguageSwitch } from "../../contexts/LanguageSwitch";
 
 export default function AddedAppointments({appointmentData}) {
     const {language} = useContext(LanguageSwitch);

@@ -1,7 +1,6 @@
-import { useContext } from "react";
+
 import userImg from "../../../../../images/user.svg";
-import { LanguageSwitch } from "../../../../../contexts/LanguageSwitch";
-import { translate } from "../../../../../utils/translate";
+
 export default function MyProfile() {
     const {language} = useContext(LanguageSwitch);
     return (

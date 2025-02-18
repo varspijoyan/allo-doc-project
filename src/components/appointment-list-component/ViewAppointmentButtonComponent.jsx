@@ -1,6 +1,3 @@
-import { useContext } from "react"
-import { LanguageSwitch } from "../../contexts/LanguageSwitch"
-import { translate } from "../../utils/translate";
 import { Link } from "react-router-dom";
 
 export default function ViewAppointmentButtonComponent({ doctorId }) {

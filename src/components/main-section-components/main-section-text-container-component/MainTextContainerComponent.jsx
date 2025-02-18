@@ -1,6 +1,4 @@
-import { useContext } from "react"
-import {translate} from "../../../utils/translate"
-import {LanguageSwitch} from "../../../contexts/LanguageSwitch";
+
 import MakeAnAppointmentButtonComponent from "../main-section-button-component/MakeAnAppointmentButtonComponent";
 import HowItWorksButtonComponent from "../main-section-button-component/HowItWorksButtonComponent";
 export default function MainTextContainerComponent() {

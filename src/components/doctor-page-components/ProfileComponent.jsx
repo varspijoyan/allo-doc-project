@@ -1,6 +1,3 @@
-import { useContext, useEffect } from "react";
-import { LanguageSwitch } from "../../contexts/LanguageSwitch";
-import { translate } from "../../utils/translate";
 import vector from "../../images/Vector2.svg";
 import doctorImage from "../../images/doc-img.svg";
 
