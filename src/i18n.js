@@ -10,7 +10,7 @@ i18n
 .init({
     debugger: true,
     fallbackLng: 'ru',
-    recources: {
+    resources: {
         ru,
         en
     }
