@@ -6,6 +6,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import AppointmentList from "./components/appointment-list-component/AppointmentList";
 import Footer from "./components/footer-component/Footer";
 import DoctorProfilePage from "./pages/DoctorProfilePage";
+import "./i18n";
 
 function App() {
   return (
