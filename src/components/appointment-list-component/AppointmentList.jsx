@@ -1,10 +1,9 @@
 import "../../styles/AppointmentList.css";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import AddedAppointments from "./AddedAppointments";
 import appointmentInfo from "../../locals/appointmentInfo.json";
 import { useParams, Link} from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { changeLanguage } from "../header-component/Language";
 import i18n from "../../i18n";
 
 export default function AppointmentList() {

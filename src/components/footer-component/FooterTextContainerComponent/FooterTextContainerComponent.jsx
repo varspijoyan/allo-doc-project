@@ -1,8 +1,8 @@
-
 import logo_footer from "../../../images/logo-footer.svg";
 import apple_logo from "../../../images/Logo-apple.svg";
 import play_market_logo from "../../../images/Logo-playmarket.svg";
 import { useTranslation } from "react-i18next";
+
 export default function FooterTextContainer() {
   const { t } = useTranslation();
   return (
