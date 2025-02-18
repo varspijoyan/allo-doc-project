@@ -2,28 +2,15 @@
 import logo_footer from "../../../images/logo-footer.svg";
 import apple_logo from "../../../images/Logo-apple.svg";
 import play_market_logo from "../../../images/Logo-playmarket.svg";
+import { useTranslation } from "react-i18next";
 export default function FooterTextContainer() {
-  const { language } = useContext(LanguageSwitch);
+  const { t } = useTranslation();
   return (
     <div className="footer-text-container">
       <img src={logo_footer} alt="logo image" />
       <div className="text">
-        <p className="text-part-1">
-          {translate("Online", language)} -{" "}
-          {translate("consultations", language)}{" "}
-          {translate("of_specialists_doctors", language)},{" "}
-          {translate("what_this_service_offers", language)}.
-        </p>
-        <p className="text-part-2">
-          {translate("In", language)} {translate("our", language)}{" "}
-          {translate("web", language)} {translate("and", language)}{" "}
-          {translate("mobile", language)} {translate("application", language)}{" "}
-          {translate("you_will_find", language)}{" "}
-          {translate("doctors", language)} {translate("experts", language)},{" "}
-          {translate("who_will_provide_you", language)}{" "}
-          {translate("personalized", language)} {translate("help", language)}{" "}
-          {translate("online", language)} 24/7.
-        </p>
+        <p className="text-part-1">{t("footer.description1")}</p>
+        <p className="text-part-2">{t("footer.description2")} 24/7.</p>
       </div>
       <div className="links">
         <div className="icon">

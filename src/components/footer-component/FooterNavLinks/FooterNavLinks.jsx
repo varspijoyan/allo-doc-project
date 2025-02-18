@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next"
+
 export default function FooterNavLinks() {
-    const {language} = useContext(LanguageSwitch);
+    const { t } = useTranslation();
+
     return (
         <div className="footer-nav-links-container">
             <ul>
-                <li><a href="#">{translate("How_to_use_?", language)}</a></li>
-                <li><a href="#">FAQ({translate("answers_to_the_questions", language)})</a></li>
-                <li><a href="#">{translate("For", language)} {translate("doctors", language)}</a></li>
-                <li><a href="#">{translate("About_the_service", language)}</a></li>
-                <li><a href="#">{translate("Contacts", language)}</a></li>
-                <li><a href="#">{translate("User_agreement", language)}</a></li>
+                <li><a href="#">{t("footer.footerLink1")}</a></li>
+                <li><a href="#">FAQ({t("footer.footerLink2")})</a></li>
+                <li><a href="#">{t("footer.footerLink3")}</a></li>
+                <li><a href="#">{t("footer.footerLink4")}</a></li>
+                <li><a href="#">{t("footer.footerLink5")}</a></li>
+                <li><a href="#">{t("footer.footerLink6")}</a></li>
             </ul>
         </div>
     )
