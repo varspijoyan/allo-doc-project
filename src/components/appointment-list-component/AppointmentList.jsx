@@ -3,10 +3,11 @@ import { useMemo } from "react";
 import AddedAppointments from "./AddedAppointments";
 import appointmentInfo from "../../locals/appointmentInfo.json";
 import { useParams, Link} from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 export default function AppointmentList() {
-    const {language} = useContext(LanguageSwitch);
+    const { t } = useTranslation(); 
     const {status} = useParams();
     const filteredAppointments = useMemo(() => {
         return appointmentInfo.filter((data) => {
@@ -22,17 +23,17 @@ export default function AppointmentList() {
 
     return (
         <section className="appointment-list">
-            <p className={`title ${language === "ru" ? "ru-title" : "en-title"}`}>{translate("My_appointments", language)}</p>
+            <p className={`title ${language === "ru" ? "ru-title" : "en-title"}`}>{t("myAppointmentsSection.heading")}</p>
             <div className="appointment-status">
                 <ul>
                     <li className={`status-upcoming ${status === "upcoming" ? "li-active" : ""}`}>
-                            <Link className="router-link" to="upcoming">{translate("Upcoming", language)}</Link>
+                            <Link className="router-link" to="upcoming">{t("myAppointmentsSection.link1")}</Link>
                     </li>
                     <li className={`status-past ${status === "past" ? "li-active" : ""}`}>
-                            <Link className="router-link" to="past">{translate("Past", language)}</Link>
+                            <Link className="router-link" to="past">{t("myAppointmentsSection.link2")}</Link>
                     </li>
                     <li className={`status-cancelled ${status === "cancelled" ? "li-active" : ""}`}>
-                            <Link className="router-link" to="cancelled">{translate("Cancelled", language)}</Link>
+                            <Link className="router-link" to="cancelled">{t("myAppointmentsSection.link3")}</Link>
                     </li>
                 </ul>
             </div>

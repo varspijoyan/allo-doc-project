@@ -5,14 +5,16 @@ import clockImg from "../../images/clock.svg";
 import chatImg from "../../images/conversation.svg";
 import videoCameraImg from "../../images/video-camera.svg";
 import docImg from "../../images/doc-img.svg";
+import { useTranslation } from "react-i18next";
 
 export default function AddedAppointments({appointmentData}) {
-    const {language} = useContext(LanguageSwitch);
+    const { t } = useTranslation();
+
     const statusType = appointmentData.status.planned
-                        ? translate("Planned", language) 
+                        ? t("myAppointmentsSection.status1") 
                         : appointmentData.status.It_took_place 
-                        ? translate("It_took_place", language)
-                        : translate("Cancelled", language);
+                        ? t("myAppointmentsSection.status2")
+                        : t("myAppointmentsSection.status3")
     const statusStyle = appointmentData.status.planned 
                         ? "planned"
                         : appointmentData.status.It_took_place
@@ -32,8 +34,8 @@ export default function AddedAppointments({appointmentData}) {
                         <p className="time">{appointmentData.time}</p>
                     </div>
                     <div className="info">
-                        <img src={appointmentData.connectedType === "Video_connection" ? videoCameraImg: chatImg} alt="chat" />
-                        <p className="chat-type">{translate(appointmentData.connectedType, language)}</p>
+                        <img src={appointmentData.connectedType === "connectionType1" ? videoCameraImg: chatImg} alt="chat" />
+                        <p className="chat-type">{t(appointmentData.connectedType)}</p>
                     </div>
                 </div>
                 <div className={`status ${statusStyle}`}>
@@ -45,8 +47,8 @@ export default function AddedAppointments({appointmentData}) {
                     <img src={docImg} alt="doctor image" />
                     <div className="doc-info">
                         <p className="full-name">{`${appointmentData.firstName} ${appointmentData.lastName}`}</p>
-                        <p className="profession">{translate(appointmentData.profession, language)}</p>
-                        <p className="experience">{`${translate("Experience", language)} ${appointmentData.experience} ${translate("years", language)}`}</p>
+                        <p className="profession">{t(appointmentData.profession)}</p>
+                        <p className="experience">{`${t("myAppointmentsSection.doctorExperience")} ${appointmentData.experience} ${t("myAppointmentsSection.experienceYear")}`}</p>
                     </div>
                 </div>
                 <div className="appointment-buttons">

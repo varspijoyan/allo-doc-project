@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next";
 
 
 export default function ViewResulationButtonComponent({appointmentDataStatus}) {
@@ -19,6 +20,6 @@ export default function ViewResulationButtonComponent({appointmentDataStatus}) {
             setButtonStyle("cancelled-bg-color");
         }
     }, [appointmentDataStatus])
-    const {language} = useContext(LanguageSwitch);
-    return <button disabled={isDisabled} className={`appointment-btn-2 ${buttonStyle}`}>{translate("View", language)} {translate("the_resulation", language)}</button>    
+    const { t } = useTranslation();
+    return <button disabled={isDisabled} className={`appointment-btn-2 ${buttonStyle}`}>{t("myAppointmentsSection.buttonText2")}</button>    
 }
