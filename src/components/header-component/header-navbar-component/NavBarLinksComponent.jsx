@@ -1,11 +1,12 @@
+import { useTranslation } from "react-i18next"
 
 export default function NavBarLinksComponent() {
-   
+    const { t } = useTranslation();
     return (
         <ul>
-            <li><a href="#">{translate("How_to_use_?", language)}</a></li>
-            <li><a href="#">{translate("My_appointments", language)}</a></li>
-            <li><a href="#">{translate("Make_an_appointment_with_a_doctor", language)}</a></li>
+            <li><a href="#">{t("header.navlink1")}</a></li>
+            <li><a href="#">{t("header.navlink2")}</a></li>
+            <li><a href="#">{t("header.navlink3")}</a></li>
         </ul>
-    )
+    );
 }
