@@ -93,6 +93,11 @@ footer {
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
+    transition: ease-in-out 0.4s;
+}
+
+.footer-nav-links-container ul li a:hover {
+    color: #56CCF2;
 }
 
 .info-footer {
