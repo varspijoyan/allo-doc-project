@@ -34,7 +34,7 @@ export default function AddedAppointments({appointmentData}) {
                         <p className="time">{appointmentData.time}</p>
                     </div>
                     <div className="info">
-                        <img src={appointmentData.connectedType === "connectionType1" ? videoCameraImg: chatImg} alt="chat" />
+                        <img src={appointmentData.connectedType === "myAppointmentsSection.connectionType1" ? videoCameraImg: chatImg} alt="chat" />
                         <p className="chat-type">{t(appointmentData.connectedType)}</p>
                     </div>
                 </div>
