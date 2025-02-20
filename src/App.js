@@ -6,8 +6,15 @@ import AppointmentList from "./components/appointment-list-component/Appointment
 import Footer from "./components/footer-component/Footer";
 import DoctorProfilePage from "./pages/DoctorProfilePage";
 import "./i18n";
+import AuthContext, { AuthContextProvider } from "./context/authorizationContext";
+import { useContext } from "react";
+import SignInPage from "./pages/SignInPage";
+function EntireAppContent() {
+  const {isAuthorized} = useContext(AuthContext);
+  if(!isAuthorized) {
+    return <SignInPage />
+  }
 
-function App() {
   return (
     <>
       <Header />
@@ -20,6 +27,14 @@ function App() {
       </Routes>
       <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <AuthContextProvider>
+      <EntireAppContent />
+    </AuthContextProvider>
   );
 }
 
