@@ -52,7 +52,7 @@ export default function SignInPage() {
         <form className="signin-form" action={action}>
             <input type="email" name="email" id="email" placeholder="Enter your email address" />
             { isShow && <input type="text" name="otp" id="otp" placeholder="Enter your verification code"/> }
-            <button onClick={() => setIsShow(true)} type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
   );
