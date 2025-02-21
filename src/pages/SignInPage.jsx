@@ -2,10 +2,12 @@ import { useActionState, useContext, useState } from "react";
 import { verify, login } from "../services/api/auth";
 import AuthContext from "../context/authorizationContext";
 import "../styles/SignIn.css";
+import UsernameForm from "./UsernameForm";
 
 export default function SignInPage() {
   const { signIn } = useContext(AuthContext);
   const [isShow, setIsShow] = useState(false); // to show otp input field
+  const [isOtpVerified, setIsOtpVerified] = useState(false); // to show username form after otp verification
   const [data, action, isPending] = useActionState(async (data, state) => {
     const email = state.get("email");
     const otp = state.get("otp");
@@ -17,7 +19,7 @@ export default function SignInPage() {
         try {
           const data = await verify(email, otp);
           if (data.status === 200) {
-            signIn(data.result);
+            setIsOtpVerified(true)
           }
           return { data, error: null };
         } catch (error) {
@@ -46,14 +48,21 @@ export default function SignInPage() {
     }
   });
 
-  return ( 
-    <div className="sign-in-form">
-        <h1>Sign In</h1>
-        <form className="signin-form" action={action}>
-            <input type="email" name="email" id="email" placeholder="Enter your email address" />
-            { isShow && <input type="text" name="otp" id="otp" placeholder="Enter your verification code"/> }
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+  return (
+    <>
+      {isOtpVerified ? (
+        <UsernameForm /> 
+      ) : (
+        <div className="sign-in-form">
+          <h1>Sign In</h1>
+          <form className="signin-form" action={action}>
+              <input type="email" name="email" id="email" placeholder="Enter your email address" />
+              { isShow && <input type="text" name="otp" id="otp" placeholder="Enter your verification code"/> }
+              <button type="submit">Submit</button>
+          </form>
+        </div>
+      )}
+    </> 
+    
   );
 }

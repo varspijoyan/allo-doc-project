@@ -1,4 +1,4 @@
-.sign-in-form {
+.sign-in-form, .username-form {
     width: 35vw;
     height: 60vh;
     margin-top: 120px;
@@ -10,11 +10,11 @@
     align-items: center;
 }
 
-.sign-in-form h1 {
+.sign-in-form h1, .username-form h1 {
     margin-top: 50px;
 }
 
-.sign-in-form .signin-form {
+.sign-in-form .signin-form, .username-form form {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
     gap: 25px;
 }
 
-.sign-in-form .signin-form input {
+.sign-in-form .signin-form input, .username-form form input {
     width: 20vw;
     height: 5vh;
     outline: none;
@@ -33,7 +33,7 @@
     padding-left: 10px;
 }
 
-.sign-in-form .signin-form button {
+.sign-in-form .signin-form button, .username-form form button {
     padding: 10px 20px;
     font-size: 17px;
     font-weight: bold;
@@ -45,6 +45,6 @@
     transition: ease-in-out 0.4s;
 }
 
-.sign-in-form .signin-form button:hover {
+.sign-in-form .signin-form button:hover, .username-form form button:hover {
     opacity: 0.9;
 }
