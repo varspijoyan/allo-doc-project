@@ -20,7 +20,7 @@ export async function verify(email, otp) {
 
 export async function getMe() {
     try {
-        const res = await api.get('/api/user/me');
+        const res = await api.get('/user/me');
         return res.data;
     } catch (error) {
         console.error("An error occurred while getting the user info");
@@ -29,7 +29,7 @@ export async function getMe() {
 
 export async function updateMe(first_name, last_name) {
     try {
-        const res = await api.put('/api/user/update_me', {first_name, last_name});
+        const res = await api.put('/user/update_me', {first_name, last_name});
         return res.data;
     } catch (error) {
         console.error("An error occurred while updating user first name and last name");
