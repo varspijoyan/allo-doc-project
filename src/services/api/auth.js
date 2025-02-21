@@ -17,3 +17,12 @@ export async function verify(email, otp) {
         console.error("An error occurred while trying to send verification", error);
     }
 }
+
+export async function getUser() {
+    try {
+        const req = await api.get('/api/user/me');
+        return req.data;
+    } catch (error) {
+        console.log("error");
+    }
+}
