@@ -1,11 +1,9 @@
 import { useActionState, useContext, useState } from "react";
 import { verify, login } from "../services/api/auth";
-import AuthContext from "../context/authorizationContext";
 import "../styles/SignIn.css";
 import UsernameForm from "./UsernameForm";
 
 export default function SignInPage() {
-  const { signIn } = useContext(AuthContext);
   const [isShow, setIsShow] = useState(false); // to show otp input field
   const [isOtpVerified, setIsOtpVerified] = useState(false); // to show username form after otp verification
   const [data, action, isPending] = useActionState(async (data, state) => {
