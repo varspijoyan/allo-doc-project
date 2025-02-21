@@ -2,6 +2,7 @@ import { useActionState, useContext, useState } from "react";
 import { verify, login } from "../services/api/auth";
 import "../styles/SignIn.css";
 import UsernameForm from "./UsernameForm";
+import { api } from "../services/api/api";
 
 export default function SignInPage() {
   const [isShow, setIsShow] = useState(false); // to show otp input field
@@ -17,6 +18,9 @@ export default function SignInPage() {
         try {
           const data = await verify(email, otp);
           if (data.status === 200) {
+            const accessToken = data.result.accessToken;
+            localStorage.setItem('accessToken', accessToken);
+            api.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
             setIsOtpVerified(true)
           }
           return { data, error: null };
