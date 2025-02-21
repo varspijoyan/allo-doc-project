@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import vector from "../../images/Vector2.svg";
 import doctorImage from "../../images/doc-img.svg";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function ProfileComponent({ docInfo }) {
   const { t } = useTranslation();
-  const [language, setLanguage] = useState('ru');  
+ 
   useEffect(() => {
     // if we remove this, by navigating to doctor page the page will be showed from the bottom 
     window.scrollTo(0, 0); // when we will navigate to the doctor page, by adding scrollTo(0, 0) this should show the page from the top 
@@ -31,7 +31,7 @@ export default function ProfileComponent({ docInfo }) {
             <img src={doctorImage} alt="doctor image" />
             <div className="name-info">
                 <h2 className="doc-name">{`${docInfo.firstName} ${docInfo.lastName}`}</h2>
-                <h3 className="doc-profession">{t(docInfo.profession, language)}</h3>
+                <h3 className="doc-profession">{t(docInfo.profession)}</h3>
                 <p className="doc-experience">{t("myAppointmentsSection.doctorExperience")} {t(docInfo.experience)} {t("myAppointmentsSection.experienceYear")}</p>
             </div>
             <div className="duration-and-price">
