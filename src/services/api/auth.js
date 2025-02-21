@@ -18,11 +18,20 @@ export async function verify(email, otp) {
     }
 }
 
-export async function getUser() {
+export async function getMe() {
     try {
-        const req = await api.get('/api/user/me');
-        return req.data;
+        const res = await api.get('/api/user/me');
+        return res.data;
     } catch (error) {
-        console.log("error");
+        console.error("An error occurred while getting the user info");
+    }
+}
+
+export async function updateMe(first_name, last_name) {
+    try {
+        const res = await api.put('/api/user/update_me', {first_name, last_name});
+        return res.data;
+    } catch (error) {
+        console.error("An error occurred while updating user first name and last name");
     }
 }

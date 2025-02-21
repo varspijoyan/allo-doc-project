@@ -1,5 +1,5 @@
 import { createContext, useCallback, useEffect, useState } from "react";
-
+import { getMe } from "../services/api/auth";
 const AuthContext = createContext();
 export default AuthContext;
 
@@ -16,7 +16,10 @@ export const AuthContextProvider = ({children}) => {
     useEffect(() => {
         const accessToken = localStorage.getItem('accessToken');
         if(accessToken) {
-            setIsAuthorized(true);
+            getMe().then(data => {
+                setUser(data.result);
+                setIsAuthorized(true);
+            })
         }
     }, []);
 

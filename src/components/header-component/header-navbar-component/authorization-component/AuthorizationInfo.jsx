@@ -1,3 +1,7 @@
+import { useContext } from "react"
+import AuthContext from "../../../../context/authorizationContext"
+
 export default function AuthorizationInfo() {
-    return <p className="full-name">Артём Свиридов</p>
+    const {user} = useContext(AuthContext);
+    return <p className="full-name">{user.first_name} {user.last_name}</p>
 }
