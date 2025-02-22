@@ -1,7 +1,9 @@
-import { useActionState } from "react";
+import { useActionState, useContext } from "react";
 import { getMe, updateMe } from "../services/api/auth";
+import AuthContext from "../context/authorizationContext";
 
 export default function UsernameForm() {
+    const {signIn} = useContext(AuthContext);
     const [data, action, isPending] = useActionState(async (data, state) => {
         const first_name = state.get("first_name");
         const last_name = state.get("last_name");
@@ -11,7 +13,10 @@ export default function UsernameForm() {
             try {
                 const res = await updateMe(first_name, last_name);
                 if(res.status === 200) {
-                    getMe();
+                    const userData = await getMe();
+                    const data = {user: userData.result};
+                    signIn(data);
+                    // console.log(data);
                 }
                 return {data, error: null};
             } catch (error) {
