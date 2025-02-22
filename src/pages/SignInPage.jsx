@@ -1,4 +1,4 @@
-import { useActionState, useContext, useState } from "react";
+import { useActionState, useState } from "react";
 import { verify, login } from "../services/api/auth";
 import "../styles/SignIn.css";
 import UsernameForm from "./UsernameForm";
