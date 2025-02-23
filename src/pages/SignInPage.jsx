@@ -3,10 +3,15 @@ import { verify, login } from "../services/api/auth";
 import "../styles/SignIn.css";
 import UsernameForm from "./UsernameForm";
 import { api } from "../services/api/api";
+import { useDispatch, useSelector } from "react-redux";
+import { getAuthorizationData } from "../store/selectors/authorizationSelector";
 
 export default function SignInPage() {
   const [isShow, setIsShow] = useState(false); // to show otp input field
   const [isOtpVerified, setIsOtpVerified] = useState(false); // to show username form after otp verification
+  const authorizationData = useSelector(getAuthorizationData);
+  // const dispatch = useDispatch();
+  // const userData = authorizationData.authorization.user;
   const [data, action, isPending] = useActionState(async (data, state) => {
     const email = state.get("email");
     const otp = state.get("otp");

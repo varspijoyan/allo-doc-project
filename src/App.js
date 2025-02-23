@@ -1,14 +1,18 @@
-import "./App.css";
-import Header from "./components/header-component/Header";
-import MainPage from "./pages/MainPage";
+import { useContext } from "react";
+import { Provider } from "react-redux";
 import { Navigate, Route, Routes } from "react-router-dom";
+import "./App.css";
 import AppointmentList from "./components/appointment-list-component/AppointmentList";
 import Footer from "./components/footer-component/Footer";
-import DoctorProfilePage from "./pages/DoctorProfilePage";
+import Header from "./components/header-component/Header";
+import AuthContext, {
+  AuthContextProvider,
+} from "./context/authorizationContext";
 import "./i18n";
-import AuthContext, { AuthContextProvider } from "./context/authorizationContext";
-import { useContext } from "react";
+import DoctorProfilePage from "./pages/DoctorProfilePage";
+import MainPage from "./pages/MainPage";
 import SignInPage from "./pages/SignInPage";
+import store from "./store";
 
 function EntireAppContent() {
   const { isAuthorized } = useContext(AuthContext);
@@ -33,9 +37,11 @@ function EntireAppContent() {
 
 function App() {
   return (
-    <AuthContextProvider>
-        <EntireAppContent/>
-    </AuthContextProvider>
+    <Provider store={store}>
+      <AuthContextProvider>
+        <EntireAppContent />
+      </AuthContextProvider>
+    </Provider>
   );
 }
 
