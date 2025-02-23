@@ -9,10 +9,11 @@ import "./i18n";
 import AuthContext, { AuthContextProvider } from "./context/authorizationContext";
 import { useContext } from "react";
 import SignInPage from "./pages/SignInPage";
+
 function EntireAppContent() {
-  const {isAuthorized} = useContext(AuthContext);
-  if(!isAuthorized) {
-    return <SignInPage />
+  const { isAuthorized } = useContext(AuthContext);
+  if (!isAuthorized) {
+    return <SignInPage />;
   }
 
   return (
@@ -27,13 +28,13 @@ function EntireAppContent() {
       </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
 function App() {
   return (
     <AuthContextProvider>
-      <EntireAppContent />
+        <EntireAppContent/>
     </AuthContextProvider>
   );
 }
