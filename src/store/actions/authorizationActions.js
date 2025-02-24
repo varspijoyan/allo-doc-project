@@ -15,8 +15,7 @@ export function getMe() {
 }
 
 export function logout() {
-    const accessToken = localStorage.getItem("accessToken")
-    localStorage.removeItem("accessToken", accessToken);
+    localStorage.removeItem("accessToken");
     return {
         type: LOGOUT,
     }
