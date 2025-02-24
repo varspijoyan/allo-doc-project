@@ -1,10 +1,9 @@
-import { useActionState, useContext } from "react";
-import AuthContext from "../context/authorizationContext";
+import { useActionState } from "react";
 import { getMe, updateMe } from "../services/api/auth";
 import { useDispatch } from "react-redux";
+import { signIn } from "../store/actions/authorizationActions";
 
 export default function UsernameForm() {
-  const { signIn } = useContext(AuthContext);
   const dispatch = useDispatch();
   const [data, action, isPending] = useActionState(async (data, state) => {
     const first_name = state.get("first_name");
@@ -16,9 +15,7 @@ export default function UsernameForm() {
         const res = await updateMe(first_name, last_name);
         if (res.status === 200) {
           const userData = await getMe();
-          const data = { user: userData.result };
-          dispatch(signIn(data));
-          // console.log(data);
+          dispatch(signIn({user: userData.result}));
         }
         return { data, error: null };
       } catch (error) {
