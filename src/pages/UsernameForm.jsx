@@ -15,7 +15,7 @@ export default function UsernameForm() {
         const res = await updateMe(first_name, last_name);
         if (res.status === 200) {
           const userData = await getMe();
-          dispatch(signIn({user: userData.result}));
+          dispatch(signIn(userData.result));
         }
         return { data, error: null };
       } catch (error) {
