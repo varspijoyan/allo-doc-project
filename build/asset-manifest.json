@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/allo-doc-project/static/css/main.baccfbe7.css",
+    "main.js": "/allo-doc-project/static/js/main.3f177b91.js",
+    "static/js/453.5e560239.chunk.js": "/allo-doc-project/static/js/453.5e560239.chunk.js",
+    "static/media/Mask-Group.svg": "/allo-doc-project/static/media/Mask-Group.f62d26dc83d927a0a753732be212ce3e.svg",
+    "static/media/girl-img.svg": "/allo-doc-project/static/media/girl-img.b67a829847de217a47b954ff93f757ca.svg",
+    "static/media/doc-img.svg": "/allo-doc-project/static/media/doc-img.42e176c59131befb93ac5eda3c8d024b.svg",
+    "static/media/OBJECTS.svg": "/allo-doc-project/static/media/OBJECTS.63e29b0d0c507b0a881cef626eb5fe40.svg",
+    "static/media/logo-footer.svg": "/allo-doc-project/static/media/logo-footer.26c68e3a6a4abe0b5a8f63e45ec275fa.svg",
+    "static/media/logo.svg": "/allo-doc-project/static/media/logo.06fd5e2ba971c84731c6bcefca8c16a2.svg",
+    "static/media/phone-call.svg": "/allo-doc-project/static/media/phone-call.556571ff5b2e47a9465a7fe3f4b227a1.svg",
+    "static/media/appointment 1.svg": "/allo-doc-project/static/media/appointment 1.cda56f5ba439bcbff4f18a2973b3e542.svg",
+    "static/media/user.svg": "/allo-doc-project/static/media/user.3750f4b81da8bee5e284f45f9759eb68.svg",
+    "static/media/conversation.svg": "/allo-doc-project/static/media/conversation.954ec1f5ac1caf6dbeed49cd833c22b7.svg",
+    "static/media/mortarboard 1.svg": "/allo-doc-project/static/media/mortarboard 1.1a9d86db2954f49a27df8e30a92219b5.svg",
+    "static/media/credit-card.svg": "/allo-doc-project/static/media/credit-card.e8fbe50c7137bc8e64c8c965cc9f0026.svg",
+    "static/media/help.svg": "/allo-doc-project/static/media/help.aad73062a0c48ec07fe1d36ed0de36d8.svg",
+    "static/media/calendar.svg": "/allo-doc-project/static/media/calendar.037909122f80c2a33204aae08b2774b3.svg",
+    "static/media/Уведомления.svg": "/allo-doc-project/static/media/Уведомления.cb3b52ca74306f08dc8b4d50020992c8.svg",
+    "static/media/place.svg": "/allo-doc-project/static/media/place.d0ebd2342e98fd19f0a9e1d13b874455.svg",
+    "static/media/logout.svg": "/allo-doc-project/static/media/logout.d1f2d432bf7d89e9c554ef13e2e22cfc.svg",
+    "static/media/video-camera.svg": "/allo-doc-project/static/media/video-camera.f633d053d6838ae4d1c1ea13402ca4d2.svg",
+    "index.html": "/allo-doc-project/index.html",
+    "static/media/Logo-apple.svg": "/allo-doc-project/static/media/Logo-apple.98acbf588977263888f626b51281558c.svg",
+    "static/media/clock.svg": "/allo-doc-project/static/media/clock.4dcf14b1a8f7ed1bd6eb2dfec61985b6.svg",
+    "static/media/Logo-playmarket.svg": "/allo-doc-project/static/media/Logo-playmarket.ff3074868530d27beb24d96a316a84d6.svg",
+    "static/media/Group 542.svg": "/allo-doc-project/static/media/Group 542.97ae04b766fa61cbe6ae7b5d6621d079.svg",
+    "static/media/message.svg": "/allo-doc-project/static/media/message.b85d2bfa03c7ebb22f6d34496cfb8bee.svg",
+    "static/media/Vector2.svg": "/allo-doc-project/static/media/Vector2.abd941884dacc3bf073f142dbcef0a9a.svg",
+    "static/media/Rectangle142.svg": "/allo-doc-project/static/media/Rectangle142.c93cad7d057a44c9f8a39a75b0d9172e.svg",
+    "static/media/Rectangle143.svg": "/allo-doc-project/static/media/Rectangle143.47edcb3c4610b3fa02b852ab00fa0f47.svg",
+    "static/media/avatar-img.svg": "/allo-doc-project/static/media/avatar-img.b25b3d5ef1a5411fb68fdcdb3b8f1555.svg",
+    "static/media/Group 541.svg": "/allo-doc-project/static/media/Group 541.27281fe1f33994a60960dac187da5e2b.svg",
+    "main.baccfbe7.css.map": "/allo-doc-project/static/css/main.baccfbe7.css.map",
+    "main.3f177b91.js.map": "/allo-doc-project/static/js/main.3f177b91.js.map",
+    "453.5e560239.chunk.js.map": "/allo-doc-project/static/js/453.5e560239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baccfbe7.css",
+    "static/js/main.3f177b91.js"
+  ]
+}
