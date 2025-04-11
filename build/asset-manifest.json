@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/allo-doc-project/static/css/main.baccfbe7.css",
-    "main.js": "/allo-doc-project/static/js/main.3f177b91.js",
+    "main.js": "/allo-doc-project/static/js/main.466bbc5c.js",
     "static/js/453.5e560239.chunk.js": "/allo-doc-project/static/js/453.5e560239.chunk.js",
     "static/media/Mask-Group.svg": "/allo-doc-project/static/media/Mask-Group.f62d26dc83d927a0a753732be212ce3e.svg",
     "static/media/girl-img.svg": "/allo-doc-project/static/media/girl-img.b67a829847de217a47b954ff93f757ca.svg",
@@ -30,14 +30,13 @@
     "static/media/Vector2.svg": "/allo-doc-project/static/media/Vector2.abd941884dacc3bf073f142dbcef0a9a.svg",
     "static/media/Rectangle142.svg": "/allo-doc-project/static/media/Rectangle142.c93cad7d057a44c9f8a39a75b0d9172e.svg",
     "static/media/Rectangle143.svg": "/allo-doc-project/static/media/Rectangle143.47edcb3c4610b3fa02b852ab00fa0f47.svg",
-    "static/media/avatar-img.svg": "/allo-doc-project/static/media/avatar-img.b25b3d5ef1a5411fb68fdcdb3b8f1555.svg",
     "static/media/Group 541.svg": "/allo-doc-project/static/media/Group 541.27281fe1f33994a60960dac187da5e2b.svg",
     "main.baccfbe7.css.map": "/allo-doc-project/static/css/main.baccfbe7.css.map",
-    "main.3f177b91.js.map": "/allo-doc-project/static/js/main.3f177b91.js.map",
+    "main.466bbc5c.js.map": "/allo-doc-project/static/js/main.466bbc5c.js.map",
     "453.5e560239.chunk.js.map": "/allo-doc-project/static/js/453.5e560239.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baccfbe7.css",
-    "static/js/main.3f177b91.js"
+    "static/js/main.466bbc5c.js"
   ]
 }
