@@ -5,7 +5,6 @@ import "./App.css";
 import AppointmentList from "./components/appointment-list-component/AppointmentList";
 import Footer from "./components/footer-component/Footer";
 import Header from "./components/header-component/Header";
-import { AuthContextProvider } from "./context/authorizationContext";
 import "./i18n";
 import DoctorProfilePage from "./pages/DoctorProfilePage";
 import MainPage from "./pages/MainPage";
@@ -50,9 +49,7 @@ function EntireAppContent() {
 function App() {
   return (
     <Provider store={store}>
-      <AuthContextProvider>
         <EntireAppContent />
-      </AuthContextProvider>
     </Provider>
   );
 }
