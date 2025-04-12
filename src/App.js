@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -9,25 +10,24 @@ import "./i18n";
 import DoctorProfilePage from "./pages/DoctorProfilePage";
 import MainPage from "./pages/MainPage";
 import SignInPage from "./pages/SignInPage";
+import { api } from "./services/api/api";
+import { getMe } from "./services/api/auth";
 import store from "./store";
 import { signIn } from "./store/actions/authorizationActions";
 import { getAuthorizationData } from "./store/selectors/authorizationSelector";
-import { useEffect } from "react";
-import { api } from "./services/api/api";
-import { getMe } from "./services/api/auth";
 
 function EntireAppContent() {
   const dispatch = useDispatch();
   const { isAuthorized } = useSelector(getAuthorizationData);
   useEffect(() => {
-    const accessToken = localStorage.getItem('accessToken');
-    api.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`
-    if(accessToken) {
-        getMe().then(data => {
-            dispatch(signIn(data.result));
-        })
+    const accessToken = localStorage.getItem("accessToken");
+    api.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`;
+    if (accessToken) {
+      getMe().then((data) => {
+        dispatch(signIn(data.result));
+      });
     }
-}, []);
+  }, []);
   if (!isAuthorized) {
     return <SignInPage />;
   }
